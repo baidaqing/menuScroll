@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="jquery.menuScroll.js"></script>
+	
+	<style>
+	
+
+		#nav {
+			background: #000;
+			left: 0;
+			list-style: none;
+			overflow: hidden;
+			padding-top: 9px;
+			position: fixed;
+			right: 0;
+			text-align: center;
+			top: 0;
+		}
+		#nav li {
+			display: inline-block;
+			margin-bottom: 0;
+		}
+		#nav a {
+			background: #000;
+			color: #fff;
+			display: block;
+			padding: 10px;
+			text-decoration: none;
+		}
+		#nav a:hover {
+			background: none;
+			color: #dedede;
+		}
+		#nav .current a {
+			background: #fff;
+			color: #000;
+		}
+		#container{
+			clear: both;
+			margin-top: 100px;
+			width: 1024px;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+		.block{
+			height: 600px;
+		}
+	</style>
+</head>
+
+<body>
+	<ul id="nav">
+		<li class="current"><a href="#block1">笔记</a></li>
+		<li><a href="#block2">问问</a></li>
+		<li><a href="#block3">前端</a></li>
+		<li><a href="#block4">技术</a></li>
+		<li><a href="#block5">教程</a></li>
+		<li><a href="#block6">资源</a></li>
+		<li><a href="#block7">招聘</a></li>
+	</ul>
+
+	<div id="container">
+		<div class="block" id="block1">
+				笔记
+		</div>
+		<div class="block" id="block2">
+				问问
+		</div>
+		<div class="block" id="block3">
+				前端
+		</div>
+		<div class="block" id="block4">
+				技术
+		</div>
+		<div class="block" id="block5">
+				教程
+		</div>
+		<div class="block" id="block6">
+				资源
+		</div>
+		<div class="block" id="block7">
+				招聘
+		</div>
+
+		
+
+		
+	</div>
+
+	
+	<script>
+		$(document).ready(function() {
+			$('#nav').menuScroll();
+		});
+	</script>
+</body>
+</html>
