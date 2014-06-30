@@ -75,6 +75,7 @@
 			self.s=setInterval(function(){
 				if(self.startScroll)
 				{
+					self.startScroll=false;
 					//计算滚动条高度
 					var scrollTop=self.$win.scrollTop();
 					//找到定位块
